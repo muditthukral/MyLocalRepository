@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tetris</title>
+    <link rel="Stylesheet" type="text/css" href="game.css" />
+</head>
+<body>
+
+    <div class="divLeft">
+        <br /><br /><br />
+        <h2>Tetris</h2>
+        <br /><br />
+
+        Game Controls - <br /><br />
+        (Use arrow keys and the spacebar)<br /><br />
+        Left = Move the block left<br />
+        Right = Move the block right<br />
+        Down = Move the block down<br />
+        Space bar = Rotate the block <br /><br /><br />
+        <button id="startButton" onclick="initialize()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="resetTimer()">Play</button>
+    </div>
+
+    <div class="divGame">
+        <canvas id="myCanvas" class="gameCanvas" height="993" width="498">
+            Sorry, the HTML5 is not supported, please upgrade your browser!
+        </canvas>
+    </div>
+
+    <div class="divGroup">
+        <label id="nextBlock">Next Block</label><br />
+        <canvas id="myCanvasPreview" class="gameCanvasPreview" height="132" width="132">
+            Sorry, the HTML5 is not supported, please upgrade your browser!
+        </canvas><br /><br />
+
+        <div>Lines: <label id="lblLinesCompleted">0</label></div><br />
+        <div>Score: <label id="lblScore">0</label></div><br />
+        <div>Level: <label id="lblLevel">0</label></div><br /><br />
+        
+
+        <br /><br /><br /><br /><br />
+        <div>Designed by: Mudit Thukral</div><br />
+        <a href="mailto: muditthukral@gmail.com">Contact Me!</a>
+    </div>
+
+
+    <script src="mygame.js" type="text/javascript"></script>
+</body>
+</html>
